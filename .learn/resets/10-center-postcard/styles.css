@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.postcard {
+  background-color: white;
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.right img {
+  max-width: 60px;
+  margin-bottom: 20px;
+}
+
+.right input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+  font-family: inherit;
+}
+
+.right input:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions button {
+  padding: 8px 16px;
+  border: 1px solid gray;
+  background-color: lightgray;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.actions button:hover {
+  background-color: gray;
+  color: white;
+}
